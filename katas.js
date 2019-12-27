@@ -21,7 +21,7 @@ function queueTime(line, registers) {
     for(var i = 0; i < registers; i++) {
       queueArr.push(0);
     }
-    // console.log(queueArr)
+
     for(var j = 0; j < line.length; j++) {
       queueArr[0] += line[j];
       console.log(queueArr)
@@ -32,3 +32,16 @@ function queueTime(line, registers) {
     
     return queueArr[queueArr.length-1];
   }
+
+// 3
+// Create a function that takes in three arguments (prob, prize, pay) and returns true if prob * prize > pay; otherwise return false.
+
+// To illustrate, profitableGamble(0.2, 50, 9) should yield true, since the net profit is 1 (0.2 * 50 - 9), and 1 > 0.
+
+function profitableGamble(prob, prize, pay) {
+	if (prob * prize > pay)
+		return true
+	else return false
+}
+
+// 4
