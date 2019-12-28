@@ -45,3 +45,15 @@ function profitableGamble(prob, prize, pay) {
 }
 
 // 4
+// Create a function that takes a string as an argument. The string is a random name.
+
+// If the last character of the name is an 'n', return true.
+// If the last character of the name is not an 'n', return false.
+
+function isLastCharacterN(word) {
+	let lastLetter = word.substring(word.length - 1, word.length)
+	if (lastLetter == "n")
+		return true
+	else return false
+}
+
