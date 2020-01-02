@@ -62,3 +62,11 @@ function isLastCharacterN(word) {
 function numberSyllables(word) {
 	return word.split("-").length;
 }
+
+// 6
+// Complete the solution so that it reverses the string value passed into it.
+
+function solution(str){
+    return str.split('').reverse().join('');  
+  }
+
