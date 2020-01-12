@@ -102,12 +102,9 @@ function century(year) {
 // 10
 // The museum of incredible dull things
 // The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
-
 // However, just as she finished rating all exhibitions, she's off to an important fair, so she asks you to write a program that tells her the ratings of the items after one removed the lowest one. Fair enough.
-
 // Task
 // Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
-
 // Don't change the order of the elements that are left.
 
 function removeSmallest(numbers) {
@@ -115,3 +112,22 @@ function removeSmallest(numbers) {
   return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
 }
 
+// 11
+// You get an array of numbers, return the sum of all of the positives ones.
+function positiveSum(arr) {
+let theSum = 0;    
+for (i = 0; i < arr.length; i++) {   
+  if (arr[i] > 0) {                   
+    theSum += arr[i];                 
+  }
+}
+return theSum;                       
+}
+
+// 12 
+// Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+
+function hyphen(num) {
+    let theString = "-"
+    return theString.repeat(num)
+}
