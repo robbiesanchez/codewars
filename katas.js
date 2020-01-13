@@ -131,3 +131,16 @@ function hyphen(num) {
     let theString = "-"
     return theString.repeat(num)
 }
+
+// 13
+// Create a function that takes an array of numbers. Return the largest number in the array.
+
+function largestNum(arr) {
+    let max = arr[0];
+    for(i = 1; i < arr.length; i++) {
+      if(max < arr[i]) {
+         max = arr[i];
+      }
+    }
+    return max;
+}
